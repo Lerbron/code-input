@@ -14,8 +14,7 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   entry: path.resolve(__dirname, "../example/index.js"),
   output: {
-    filename: 'js/[name].[chunkhash:8].js',
-    chunkFilename: 'js/[name].[chunkhash:8].js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, '../dist'),
     publicPath: "/",
   },
