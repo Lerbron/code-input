@@ -1,0 +1,46 @@
+{
+  "name": "code-input",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run dev",
+    "build": "yarn run prd",
+    "dev": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
+    "prd": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js"
+  },
+  "dependencies": {
+    "@babel/runtime-corejs3": "^7.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.3.0",
+    "postcss-normalize": "^9.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^11.1.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.2",
+    "thread-loader": "^3.0.4",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-node-externals": "^3.0.0",
+    "webpackbar": "^5.0.0-3"
+  }
+}
