@@ -2,13 +2,19 @@
   "name": "code-input",
   "version": "1.0.0",
   "main": "dist/bundle.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "license": "MIT",
   "scripts": {
     "start": "yarn run dev",
     "build": "yarn run prd",
     "dev": "cross-env NODE_ENV=development webpack serve --config ./build/webpack.dev.js",
     "prd": "cross-env NODE_ENV=production webpack --config ./build/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lerbron/code-input.git"
   },
   "dependencies": {
     "@babel/runtime-corejs3": "^7.14.0",
